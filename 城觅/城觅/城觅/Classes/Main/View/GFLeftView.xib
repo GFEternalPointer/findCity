@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6ds-xC-E3b" customClass="GFLeftView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="EFz-G6-xXR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFH-NZ-Srt">
+                    <rect key="frame" x="71" y="48" width="52" height="22"/>
+                    <state key="normal" title="城市" image="city_down">
+                        <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXH-c0-vGz" customClass="GFMenuBtn">
+                    <rect key="frame" x="24" y="83" width="190" height="71"/>
+                    <state key="normal" image="home">
+                        <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="homeSeletced"/>
+                    <connections>
+                        <action selector="leftBtnClick:" destination="6ds-xC-E3b" eventType="touchUpInside" id="6MK-eC-Ivn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8p-RS-bFc" customClass="GFMenuBtn">
+                    <rect key="frame" x="0.0" y="143" width="239" height="54"/>
+                    <state key="normal" image="found"/>
+                    <state key="selected" image="foundSelected"/>
+                    <connections>
+                        <action selector="leftBtnClick:" destination="6ds-xC-E3b" eventType="touchUpInside" id="5t9-df-3V7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIq-ua-j3w" customClass="GFMenuBtn">
+                    <rect key="frame" x="0.0" y="225" width="239" height="54"/>
+                    <state key="normal" image="unLogin"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krv-xu-jLJ" customClass="GFMenuBtn">
+                    <rect key="frame" x="0.0" y="287" width="239" height="54"/>
+                    <state key="normal" image="sina"/>
+                    <state key="selected" image="sinaH"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKH-7V-WzK" customClass="GFMenuBtn">
+                    <rect key="frame" x="0.0" y="349" width="239" height="54"/>
+                    <state key="normal" image="weixin"/>
+                    <state key="selected" image="weixinH"/>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKc-FY-Bvx" customClass="GFMenuBtn">
+                    <rect key="frame" x="0.0" y="475" width="239" height="54"/>
+                    <state key="normal" image="seting"/>
+                    <state key="selected" image="setingSelected"/>
+                    <connections>
+                        <action selector="leftBtnClick:" destination="6ds-xC-E3b" eventType="touchUpInside" id="pvc-iX-rKA"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackLine" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-7C-vuc">
+                    <rect key="frame" x="0.0" y="199" width="223" height="18"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackLine" translatesAutoresizingMaskIntoConstraints="NO" id="opG-Cl-eV0">
+                    <rect key="frame" x="0.0" y="416" width="223" height="18"/>
+                </imageView>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxz-et-bzY" customClass="GFMenuBtn">
+                    <rect key="frame" x="0.0" y="433" width="239" height="54"/>
+                    <state key="normal" image="message"/>
+                    <state key="selected" image="messageSelected"/>
+                    <connections>
+                        <action selector="leftBtnClick:" destination="6ds-xC-E3b" eventType="touchUpInside" id="oFe-sF-GSJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EFz-G6-xXR" secondAttribute="bottom" id="R0Q-gl-Sng"/>
+                <constraint firstItem="EFz-G6-xXR" firstAttribute="leading" secondItem="6ds-xC-E3b" secondAttribute="leading" id="fVY-tQ-Oui"/>
+                <constraint firstAttribute="trailing" secondItem="EFz-G6-xXR" secondAttribute="trailing" id="h5a-xA-so6"/>
+                <constraint firstItem="EFz-G6-xXR" firstAttribute="top" secondItem="6ds-xC-E3b" secondAttribute="top" id="lLP-Wd-Nnt"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="preSelBtn" destination="CXH-c0-vGz" id="w0G-KM-7NG"/>
+            </connections>
+            <point key="canvasLocation" x="326.5" y="413.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgImage" width="194" height="186"/>
+        <image name="blackLine" width="258" height="24"/>
+        <image name="city_down" width="16" height="9"/>
+        <image name="found" width="185" height="54"/>
+        <image name="foundSelected" width="185" height="54"/>
+        <image name="home" width="185" height="54"/>
+        <image name="homeSeletced" width="185" height="54"/>
+        <image name="message" width="185" height="54"/>
+        <image name="messageSelected" width="185" height="54"/>
+        <image name="seting" width="185" height="54"/>
+        <image name="setingSelected" width="185" height="54"/>
+        <image name="sina" width="194" height="51"/>
+        <image name="sinaH" width="194" height="51"/>
+        <image name="unLogin" width="202" height="50"/>
+        <image name="weixin" width="194" height="51"/>
+        <image name="weixinH" width="194" height="51"/>
+    </resources>
+</document>
